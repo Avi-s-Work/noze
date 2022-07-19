@@ -12,17 +12,18 @@ export default function Wondering() {
     mx-auto"
       >
         {/* Image Masking */}
-        <div className="flex items-center justify-center border border-emerald-400">
-          <div className="bg-red-400 h-96 w-96 rounded-full">
+        <div className="flex items-center justify-center">
+          <div className="h-96 w-96 rounded-full relative overflow-hidden">
             <Image
               src="/../public/images/wondering.png"
               alt="Noze"
               layout="fill"
+              className="absolute"
             />
           </div>
         </div>
         {/* Text Detail  */}
-        <div className=" flex justify-end border border-emerald-400">
+        <div className=" flex justify-end">
           <div>
             <h1 className="pb-6 text-5xl text-slate-900 font-bold text-center sm:text-left">
               Wondering if <br /> you should get <br /> a NOZE?
@@ -31,12 +32,12 @@ export default function Wondering() {
               Any way you slice it, it’s a no brainer.
             </p>
             <ol className="pt-10 wondering-list text-lg">
-              <li>Reduce Virus spread</li>
-              <li>Watch out for Mold</li>
-              <li>Keep Asthma in check</li>
-              <li>Avoid Allergy flare ups</li>
-              <li>Improve your Sleep</li>
-              <li>Boost Productivity & Focus</li>
+              <li>&nbsp;1. Reduce Virus spread</li>
+              <li>2. Watch out for Mold</li>
+              <li>3. Keep Asthma in check</li>
+              <li>4. Avoid Allergy flare ups</li>
+              <li>5. Improve your Sleep</li>
+              <li>6. Boost Productivity & Focus</li>
             </ol>
           </div>
         </div>

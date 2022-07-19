@@ -20,4 +20,6 @@ a {
 
 .wondering-list li {
   padding-bottom: 10px;
+  font-weight: 500;
+  color: rgb(68, 64, 64);
 }
