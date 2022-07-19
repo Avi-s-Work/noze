@@ -1,6 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 export default function Hero() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("scroll_inView", inView);
+    if (inView) {
+      animation.start({
+        y: 0,
+        trantsition: {
+          type: "spring",
+          duration: 10,
+        },
+      });
+    }
+
+    if (!inView) {
+      animation.start({
+        y: "-100vw",
+      });
+    }
+  }, [inView, animation]);
+
   return (
     <>
       <div
@@ -29,15 +58,10 @@ export default function Hero() {
           </button>
         </div>
         {/* Banner  */}
-        <div className="flex justify-start">
-          <div
-            className="bg-white 
-      mt-0
-      lg:mt-10 
-      xl:mt-10
-      lg:px-0
-      xl:px-0
-      md:px-24"
+        <div ref={ref} className="flex justify-start">
+          <motion.div
+            animate={animation}
+            className="bg-white mt-0 lg:mt-10 xl:mt-10 lg:px-0 xl:px-0 md:px-24"
           >
             <Image
               src="/../public/images/NOZE_Device.png"
@@ -45,7 +69,7 @@ export default function Hero() {
               width="460"
               height="540"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

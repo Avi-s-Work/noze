@@ -5,14 +5,14 @@ export default function Navbar() {
     <>
       <div className="navbar bg-base-100 border-b">
         {/* Logo  */}
-          <a href="/about" className="ml-10">
-            <Image
-              src="/../public/images/NOZE_Logo.webp"
-              alt="Noze"
-              width="125"
-              height="35"
-            />
-          </a>
+        <a href="/about" className="ml-4 lg:ml-10 xl:ml-10">
+          <Image
+            src="/../public/images/NOZE_Logo.webp"
+            alt="Noze"
+            width="125"
+            height="35"
+          />
+        </a>
         {/* NavLinks  */}
         <div className="navbar-start hidden lg:flex">
           <Link href="#">
@@ -40,17 +40,19 @@ export default function Navbar() {
           </button>
         </div>
         {/* Accordion */}
-        <div className="navbar-end mr-10 sm:hidden flex">
-          <div className="collapse border border-base-300 bg-base-100 rounded-box">
-            <input type="checkbox" />
-            <button className="collapse-title px-6 text-xs">
-              <span>content</span>
-            </button>
-            <div className="collapse-content">
-              <span className="text-xs text-center">attribute</span>
-            </div> 
-          </div>
-         
+        <div className="navbar-end ml-10 sm:hidden flex">
+        <ul className="menu menu-horizontal p-0">
+      <li tabIndex="0">
+        <a>
+          Parent
+          <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <ul className="p-2">
+          <li><a>Submenu 1</a></li>
+          <li><a>Submenu 2</a></li>
+        </ul>
+      </li>
+    </ul>
         </div>
       </div>
     </>
