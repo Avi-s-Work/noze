@@ -3,6 +3,7 @@ import Hero from "../components/hero";
 import Making from "../components/making";
 import Conquer from "../components/conquer";
 import Break from "../components/break";
+import Important from "../components/important";
 export default function Layout({ children }) {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
       <Making />
       <Conquer />
       <Break />
+      <Important />
       <main>{children}</main>
     </>
   );
