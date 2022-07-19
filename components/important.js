@@ -1,7 +1,7 @@
 export default function Important() {
   return (
     <>
-      <div className="flex-col justify-center py-24">
+      <div className="flex-col justify-center py-24 w-full">
         <div className="px-52 pb-16">
           <h1 className="text-center pb-12 text-5xl text-slate-900 font-bold">
             What’s more important, form or function?

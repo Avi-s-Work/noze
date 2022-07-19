@@ -4,6 +4,7 @@ import Making from "../components/making";
 import Conquer from "../components/conquer";
 import Break from "../components/break";
 import Important from "../components/important";
+import Wondering from "../components/wondering";
 export default function Layout({ children }) {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Layout({ children }) {
       <Conquer />
       <Break />
       <Important />
+      <Wondering />
       <main>{children}</main>
     </>
   );
