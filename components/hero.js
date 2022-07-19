@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function Hero() {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.3,
   });
 
   const animation = useAnimation();
@@ -16,16 +16,15 @@ export default function Hero() {
     if (inView) {
       animation.start({
         y: 0,
-        trantsition: {
-          type: "spring",
-          duration: 10,
+        transition: {
+          duration: 1,
         },
       });
     }
 
     if (!inView) {
       animation.start({
-        y: "-100vw",
+        y: 200,
       });
     }
   }, [inView, animation]);
