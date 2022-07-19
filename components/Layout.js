@@ -7,11 +7,6 @@ export default function Layout({ children }) {
       <Navbar />
       <Hero />
       <Scroll />
-      <Scroll />
-      <Scroll />
-      <Scroll />
-      <Scroll />
-      <Scroll />
       <main>{children}</main>
     </>
   );

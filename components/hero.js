@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function Hero() {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
   });
 
   const animation = useAnimation();
@@ -15,7 +15,7 @@ export default function Hero() {
     console.log("scroll_inView", inView);
     if (inView) {
       animation.start({
-        y: 0,
+        y: 8,
         transition: {
           duration: 1,
         },
@@ -41,8 +41,7 @@ export default function Hero() {
     md:px-16 
     lg:px-16 
     xl:px-16 
-    mx-auto 
-    text-gray-900"
+    mx-auto"
       >
         <div className="w-full">
           <h1 className="pt-8 xl:pt-0 lg:pt-0 text-5xl text-slate-900 font-bold text-center sm:text-left">
@@ -57,10 +56,10 @@ export default function Hero() {
           </button>
         </div>
         {/* Banner  */}
-        <div ref={ref} className="flex justify-start">
+        <div ref={ref} className="flex justify-start overflow-hidden">
           <motion.div
             animate={animation}
-            className="bg-white mt-0 lg:mt-10 xl:mt-10 lg:px-0 xl:px-0 md:px-24"
+            className="bg-white mt-0 lg:mt-8 xl:mt-8 lg:px-0 xl:px-0 md:px-24"
           >
             <Image
               src="/../public/images/NOZE_Device.png"
