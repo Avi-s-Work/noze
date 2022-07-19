@@ -2,7 +2,7 @@ export default function Conquer() {
   return (
     <>
       <div
-        className="max-w-screen-xl py-28 grid 
+        className="max-w-screen-xl py-24 grid 
     grid-cols-1 
     md:grid-cols-1 
     xl:grid-cols-2 
@@ -10,7 +10,7 @@ export default function Conquer() {
     items-center    
     mx-auto"
       >
-        {/* Banner  */}
+        {/* Video  */}
         <div className="flex justify-start ml-6">
           <video
             src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/NOZEabout1.mp4"

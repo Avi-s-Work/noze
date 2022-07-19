@@ -1,4 +1,4 @@
-export default function Scroll() {
+export default function Making() {
   return (
     <>
       <div className="bg-gray-100 h-52 w-full flex items-center ">
