@@ -24,7 +24,7 @@ export default function Hero() {
 
     if (!inView) {
       animation.start({
-        y: 200,
+        y: 400,
       });
     }
   }, [inView, animation]);
