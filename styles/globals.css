@@ -23,3 +23,31 @@ a {
   font-weight: 500;
   color: rgb(68, 64, 64);
 }
+
+.sec-container {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  border: 2px solid #c026c0;
+}
+
+.question {
+  font-weight: 600;
+  padding: 2px;
+  cursor: pointer;
+  color: #c026c0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 2px;
+}

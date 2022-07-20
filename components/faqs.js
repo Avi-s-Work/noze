@@ -4,16 +4,6 @@ import useSWR from "swr";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-/* export const getStaticProps = async () => {
-  const res = await fetch("/faqs.json");
-  const data = await res.json;
-  return {
-    props: {
-      faqs: data,
-    },
-  };
-}; */
-
 export default function Faqs({ faqs }) {
   const { data, error } = useSWR("/faqs.json", fetcher);
 
@@ -50,6 +40,15 @@ export default function Faqs({ faqs }) {
           </div>
         ))}
       </div>
+      <section className="w-52 sec-container m-28">
+        <div className="question"><span className="text-sm">Overview</span></div>
+        <div className="answercont">
+          <div className="answer">
+          <span className="text-sm">Specs</span>
+          <span className="text-sm">Overview</span>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
