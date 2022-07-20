@@ -6,6 +6,7 @@ import Break from "../components/break";
 import Important from "../components/important";
 import Wondering from "../components/wondering";
 import Faqs from "../components/faqs";
+import Connected from "../components/connected";
 export default function Layout({ children }) {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Layout({ children }) {
       <Important />
       <Wondering />
       <Faqs />
+      <Connected />
       <main>{children}</main>
     </>
   );

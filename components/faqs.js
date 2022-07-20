@@ -12,7 +12,7 @@ export default function Faqs({ faqs }) {
 
   return (
     <>
-      <div className="px-24 py-16">
+      <div className="px-24 pt-16 pb-10">
         <h1 className="pb-12 text-5xl text-slate-900 font-bold text-center">
           FAQs
         </h1>
