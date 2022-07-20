@@ -8,25 +8,27 @@ export default function Navbar() {
       <div className="navbar bg-base-100 border-b relative">
         {/* Logo  */}
 
-        <a href="/about" className="ml-4 lg:ml-10 xl:ml-10">
-          <Image
-            src="/images/NOZE_Logo.webp"
-            alt="Noze"
-            width="125"
-            height="35"
-          />
-        </a>
+        <Link href="/">
+          <div className="ml-4 lg:ml-10 xl:ml-10 cursor-pointer">
+            <Image
+              src="/images/NOZE_Logo.webp"
+              alt="Noze"
+              width="125"
+              height="35"
+            />
+          </div>
+        </Link>
 
         {/* NavLinks  */}
 
         <div className="navbar-start hidden lg:flex">
-          <Link href="#">
+          <Link href="/">
             <span className="text-sm cursor-pointer ml-8 mr-8 text-purple-500 hover:text-purple-700">
               Overview
             </span>
           </Link>
 
-          <Link href="">
+          <Link href="/break">
             <span className="text-sm cursor-pointer mr-8 text-gray-400 hover:text-gray-500">
               Specs
             </span>

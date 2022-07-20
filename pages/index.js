@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
-
+import Homepage from "../pages/homepage";
 export default function Home() {
   return (
     <div>
@@ -13,7 +13,7 @@ export default function Home() {
           href="https://getnoze.com/wp-content/themes/noze/noze/assets/img/favicon.svg"
         />
       </Head>
-
+      <Homepage />
       <Script src="/accordion.js"></Script>
     </div>
   );

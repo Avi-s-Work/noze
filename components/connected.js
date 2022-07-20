@@ -31,9 +31,7 @@ export default function Connected() {
               height="24"
             />
           </div>
-          <div className="year text-sm font-semibold text-center">
-            2021 NOZE
-          </div>
+          <div className="year text-sm text-center">2021 NOZE</div>
           <div className="copyright text-xs font-semibold flex items-center justify-end gap-9">
             <a href="">Privacy Policy</a>
             <a href="">Terms of Use</a>
