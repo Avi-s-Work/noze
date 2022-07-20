@@ -10,7 +10,7 @@ export default function Navbar() {
 
         <a href="/about" className="ml-4 lg:ml-10 xl:ml-10">
           <Image
-            src="/../public/images/NOZE_Logo.webp"
+            src="/images/NOZE_Logo.webp"
             alt="Noze"
             width="125"
             height="35"
@@ -50,7 +50,7 @@ export default function Navbar() {
 
         {/* Little Accordion */}
 
-        <div className="w-32 mr-2 sec-container px-3">
+        <div className="absolute sm:hidden flex flex-col items-start w-32 mr-2 sec-container px-3">
           <div className="question">
             <span className="text-sm">Overview</span>
             <FontAwesomeIcon

@@ -29,21 +29,20 @@ a {
   border-radius: 20px;
   border: 1px solid #c026c0;
   right: 0;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .question {
-  padding: 1px 0 1px 0;
+  padding: 2px 0 2px 0;
   cursor: pointer;
   color: #c026c0;
+  display: flex;
+  align-items: center;
 }
 
 .answercont {
+  max-height: 0;
   overflow: hidden;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .answer {
