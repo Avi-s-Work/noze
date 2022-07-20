@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Connected() {
   return (
     <>
@@ -14,8 +15,27 @@ export default function Connected() {
             Join the waitlist
           </button>
         </div>
-        <footer className="bottom-0 absolute h-20 w-full bg-gray-100">
-            
+        <footer className="px-16 bottom-0 absolute h-20 w-full bg-gray-100 flex items-center justify-between">
+          <div className="social w-32 flex items-center justify-between">
+            <Image src="/images/fb.svg" alt="facebook" width="24" height="24" />
+            <Image
+              src="/images/twitter.svg"
+              alt="twitter"
+              width="24"
+              height="24"
+            />
+            <Image
+              src="/images/instagram.svg"
+              alt="instagram"
+              width="24"
+              height="24"
+            />
+          </div>
+          <div className="copyright text-sm w-80 flex items-center justify-between">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Contact</a>
+          </div>
         </footer>
       </div>
     </>
