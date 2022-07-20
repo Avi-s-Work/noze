@@ -15,7 +15,7 @@ export default function Connected() {
             Join the waitlist
           </button>
         </div>
-        <footer className="px-16 bottom-0 absolute h-20 w-full bg-gray-100 flex items-center justify-between">
+        <footer className="px-20 bottom-0 absolute h-20 w-full bg-gray-100 grid grid-cols-3 items-center justify-items-between">
           <div className="social w-32 flex items-center justify-between">
             <Image src="/images/fb.svg" alt="facebook" width="24" height="24" />
             <Image
@@ -31,7 +31,10 @@ export default function Connected() {
               height="24"
             />
           </div>
-          <div className="copyright text-sm w-80 flex items-center justify-between">
+          <div className="year text-sm font-semibold text-center">
+            2021 NOZE
+          </div>
+          <div className="copyright text-xs font-semibold flex items-center justify-end gap-9">
             <a href="">Privacy Policy</a>
             <a href="">Terms of Use</a>
             <a href="">Contact</a>
