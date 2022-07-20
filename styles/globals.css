@@ -26,28 +26,27 @@ a {
 
 .sec-container {
   background-color: white;
-  color: black;
   border-radius: 20px;
-  border: 2px solid #c026c0;
+  border: 1px solid #c026c0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .question {
-  font-weight: 600;
-  padding: 2px;
+  padding: 1px 0 1px 0;
   cursor: pointer;
   color: #c026c0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .answercont {
-  max-height: 0;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .answer {
-  padding: 2px;
+  color: #c026c0;
+  cursor: pointer;
 }

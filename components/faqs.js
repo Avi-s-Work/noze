@@ -40,15 +40,6 @@ export default function Faqs({ faqs }) {
           </div>
         ))}
       </div>
-      <section className="w-52 sec-container m-28">
-        <div className="question"><span className="text-sm">Overview</span></div>
-        <div className="answercont">
-          <div className="answer">
-          <span className="text-sm">Specs</span>
-          <span className="text-sm">Overview</span>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
