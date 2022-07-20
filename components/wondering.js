@@ -15,10 +15,11 @@ export default function Wondering() {
         <div className="flex items-center justify-center">
           <div className="h-96 w-96 rounded-full relative overflow-hidden">
             <Image
-              src="/../public/images/wondering.png"
+              src="/images/wondering.png"
               alt="Noze"
               layout="fill"
               className="absolute"
+              priority
             />
           </div>
         </div>

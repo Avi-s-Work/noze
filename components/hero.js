@@ -24,7 +24,7 @@ export default function Hero() {
 
     if (!inView) {
       animation.start({
-        y: 400,
+        y: 500,
       });
     }
   }, [inView, animation]);
@@ -62,10 +62,11 @@ export default function Hero() {
             className="bg-white mt-0 lg:mt-8 xl:mt-8 lg:px-0 xl:px-0 md:px-24"
           >
             <Image
-              src="/../public/images/NOZE_Device.png"
+              src="/images/NOZE_Device.png"
               alt="Noze"
               width="460"
               height="540"
+              priority
             />
           </motion.div>
         </div>

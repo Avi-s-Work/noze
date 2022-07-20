@@ -16,7 +16,7 @@ export default function Conquer() {
             src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/NOZEabout1.mp4"
             autoPlay
             loop
-            muted="muted"
+            muted
           ></video>
         </div>
         {/* Text Detail  */}

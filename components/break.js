@@ -31,7 +31,7 @@ export default function Break() {
             src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/NOZEabout2.mp4"
             autoPlay
             loop
-            muted="muted"
+            muted
           ></video>
         </div>
       </div>

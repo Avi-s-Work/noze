@@ -14,7 +14,7 @@ export default function Important() {
           src="https://getnoze.com/wp-content/uploads/2021/08/WALP.mp4"
           autoPlay
           loop
-          muted="muted"
+          muted
         ></video>
       </div>
     </>
