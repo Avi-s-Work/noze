@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 export default function Navbar() {
   return (
     <>
@@ -28,13 +29,13 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <Link href="/break">
+          <Link href="/specs">
             <span className="text-sm cursor-pointer mr-8 text-gray-400 hover:text-gray-500">
               Specs
             </span>
           </Link>
 
-          <Link href="">
+          <Link href="/faqsnav">
             <span className="text-sm cursor-pointer mr-8 text-gray-400 hover:text-gray-500">
               FAQs
             </span>
