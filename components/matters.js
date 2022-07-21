@@ -26,17 +26,33 @@ export default function Matters() {
           <div className="w-3/5">
             {matters.map((matter) => (
               <div key={matter._id} matter={matter}>
-                <button className="text-purple-300 text-xl font-bold hover:font-light focus:text-purple-900 hover:text-purple-500 mb-4" onClick={() => clickSingleMatter(matter)}>
+                <button
+                  className="text-purple-300 text-xl font-bold hover:font-light focus:text-purple-900 hover:text-purple-500 mb-4"
+                  onClick={() => clickSingleMatter(matter)}
+                >
                   {matter.button}
                 </button>
               </div>
             ))}
           </div>
           {/* Check In Details  */}
-          <div className="w-full h-screen border border-red-700">
+          <div className="w-full border border-red-700">
             {selectedMatter.map((singleMatters) => (
-              <div key={singleMatters._id}>
-                <h1>{singleMatters.matterTitle}</h1>
+              <div
+                className="rounded-full relative overflow-hidden"
+                style={{ width: "817px", height: "517px" }}
+                key={singleMatters._id}
+              >
+                <Image
+                  src="/images/matters1.png"
+                  alt=""
+                  layout="fill"
+                  priority
+                  className="absolute"
+                ></Image>
+                <h1 className="absolute text-center text-white text-4xl top-28">
+                  {singleMatters.matterTitle}
+                </h1>
               </div>
             ))}
           </div>
