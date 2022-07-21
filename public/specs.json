@@ -2,58 +2,58 @@
   {
     "id": "0",
     "title": "What's in the box?",
-    "specOne": "Quick Start Guide",
-    "specTwo": "Quick Start Guide",
-    "specThree": "Quick Start Guide",
+    "specOne": "NOZE Device",
+    "specTwo": "Power Adaptor",
+    "specThree": "Cable",
     "specFour": "Quick Start Guide"
   },
   {
     "id": "1",
     "title": "Dimensions & Weight",
-    "specOne": "Quick Start Guide",
-    "specTwo": "Quick Start Guide",
-    "specThree": "Quick Start Guide",
-    "specFour": "Quick Start Guide"
+    "specOne": "Width: 86mm",
+    "specTwo": "Depth: 86mm",
+    "specThree": "Height: 167 mm",
+    "specFour": "Weight: 650g"
   },
   {
     "id": "2",
     "title": "Power",
-    "specOne": "Quick Start Guide",
-    "specTwo": "Quick Start Guide"
+    "specOne": "Input: 100–240 V AC 0.2 A",
+    "specTwo": "DC Output: 5 V DC 3.0 A"
   },
   {
     "id": "3",
     "title": "Connectivity",
-    "specOne": "Quick Start Guide",
-    "specTwo": "Quick Start Guide"
+    "specOne": "802.11 a/b/g/n (2.4 GHz) Wi-Fi",
+    "specTwo": "Bluetooth Low Energy"
   },
   {
     "id": "4",
     "title": "Requirements",
-    "specOne": "Quick Start Guide",
-    "specTwo": "Quick Start Guide",
-    "specThree": "Quick Start Guide",
-    "specFour": "Quick Start Guide"
+    "specOne": "Nearby electrical socket",
+    "specTwo": "WiFi Network",
+    "specThree": "Compatible mobile device with iOS 8 or later, or Android 4 or later",
+    "specFour": "The free NOZE app"
   },
   {
     "id": "5",
     "title": "Detection Ranges",
-    "specOne": "Quick Start Guide",
-    "specTwo": "Quick Start Guide",
-    "specThree": "Quick Start Guide",
-    "specFour": "Quick Start Guide",
-    "specFive": "Quick Start Guide",
-    "specSix": "Quick Start Guide",
-    "specSeven": "Quick Start Guide",
-    "specEight": "Quick Start Guide",
-    "specNine": "Quick Start Guide",
-    "specTen": "Quick Start Guide",
-    "specEleven": "Quick Start Guide",
-    "specTwelve": "Quick Start Guide"
+    "specOne": "Mould Index: 1 to 10",
+    "specTwo": "Virus Index: 1 to 10",
+    "specThree": "Carbon Dioxide: 0.1 to 2000 ppm",
+    "specFour": "Ammonia: 0.1 to 50 ppm",
+    "specFive": "Formaldehyde: 0.1 to 2 ppm",
+    "specSix": "Butanal: 0.1 to 50 ppm",
+    "specSeven": "Nitrogen Dioxide: 0.1 to 5 ppm",
+    "specEight": "Ethanol: <1000 ppm to >3000 ppm",
+    "specNine": "Tobacco Odour: Present/Absent",
+    "specTen": "PM 2.5: 0 to 1000 μg/m3",
+    "specEleven": "PM 10: 0 to 1000 μg/m3",
+    "specTwelve": "Humidity: 10% to 80%"
   },
   {
     "id": "6",
     "title": "Warranty",
-    "specOne": "Quick Start Guide"
+    "specOne": "One-year limited warranty"
   }
 ]
