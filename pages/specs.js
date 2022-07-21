@@ -41,18 +41,20 @@ export default function Specs() {
                 />
               </div>
               <div className="collapse-content px-8">
-                <p className="text-lg text-gray-500">{spec.specOne}</p>
-                <p className="text-lg text-gray-500">{spec.specTwo}</p>
-                <p className="text-lg text-gray-500">{spec.specThree}</p>
-                <p className="text-lg text-gray-500">{spec.specFour}</p>
-                <p className="text-lg text-gray-500">{spec.specFive}</p>
-                <p className="text-lg text-gray-500">{spec.specSix}</p>
-                <p className="text-lg text-gray-500">{spec.specSeven}</p>
-                <p className="text-lg text-gray-500">{spec.specEight}</p>
-                <p className="text-lg text-gray-500">{spec.specNine}</p>
-                <p className="text-lg text-gray-500">{spec.specTen}</p>
-                <p className="text-lg text-gray-500">{spec.specEleven}</p>
-                <p className="text-lg text-gray-500">{spec.specTwelve}</p>
+                <div className="pb-2">
+                  <p className="text-lg text-gray-500">{spec.specOne}</p>
+                  <p className="text-lg text-gray-500">{spec.specTwo}</p>
+                  <p className="text-lg text-gray-500">{spec.specThree}</p>
+                  <p className="text-lg text-gray-500">{spec.specFour}</p>
+                  <p className="text-lg text-gray-500">{spec.specFive}</p>
+                  <p className="text-lg text-gray-500">{spec.specSix}</p>
+                  <p className="text-lg text-gray-500">{spec.specSeven}</p>
+                  <p className="text-lg text-gray-500">{spec.specEight}</p>
+                  <p className="text-lg text-gray-500">{spec.specNine}</p>
+                  <p className="text-lg text-gray-500">{spec.specTen}</p>
+                  <p className="text-lg text-gray-500">{spec.specEleven}</p>
+                  <p className="text-lg text-gray-500">{spec.specTwelve}</p>
+                </div>
               </div>
             </div>
           ))}
