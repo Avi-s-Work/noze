@@ -1,7 +1,35 @@
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 export default function Conquer() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("scroll_inView", inView);
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: { type: "spring", bounce: 0.4, duration: 2 },
+      });
+    }
+
+    if (!inView) {
+      animation.start({
+        y: 200,
+        opacity: 0,
+      });
+    }
+  }, [inView, animation]);
+
   return (
     <>
       <div
+        ref={ref}
         className="max-w-screen-xl py-24 grid 
     grid-cols-1 
     md:grid-cols-1 
@@ -22,16 +50,22 @@ export default function Conquer() {
         {/* Text Detail  */}
         <div className="flex justify-end pl-12">
           <div>
-            <h1 className="pb-16 text-5xl text-slate-900 font-bold text-center sm:text-left">
+            <motion.h1
+              animate={animation}
+              className="pb-16 text-5xl text-slate-900 font-bold text-center sm:text-left"
+            >
               Сonquer the Virus
-            </h1>
-            <p className="text-lg text-gray-600 text-center sm:text-left">
+            </motion.h1>
+            <motion.p
+              animate={animation}
+              className="text-lg text-gray-600 text-center sm:text-left"
+            >
               Noze tracks the airborne markers (VOCs) associated with the
               Coronavirus family. Our AI uses that information to deliver a
               real-time risk index that will not only tell you if your space is
               prone to spreading the virus, but whether there’s a chance the
               virus is actually in the air.
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

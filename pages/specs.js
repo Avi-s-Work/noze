@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import useSWR from "swr";
 import Image from "next/image";
+import Head from "next/head";
 import Footer from "../components/footer";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -14,6 +15,14 @@ export default function Specs() {
 
   return (
     <>
+      <Head>
+        <title>NOZE</title>
+        <link
+          rel="icon"
+          type="image/svg"
+          href="https://getnoze.com/wp-content/themes/noze/noze/assets/img/favicon.svg"
+        />
+      </Head>
       <div
         style={{ backgroundColor: "#000000" }}
         className="h-screen w-full flex items-center justify-center"

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import Head from "next/head";
 import useSWR from "swr";
 import Connected from "../components/connected";
 
@@ -13,6 +14,14 @@ export default function Faqsnav({ faqs }) {
 
   return (
     <>
+      <Head>
+        <title>NOZE</title>
+        <link
+          rel="icon"
+          type="image/svg"
+          href="https://getnoze.com/wp-content/themes/noze/noze/assets/img/favicon.svg"
+        />
+      </Head>
       <div className="px-24 pt-16 pb-10">
         <h1 className="pb-12 text-5xl text-slate-900 font-bold text-center">
           FAQs
