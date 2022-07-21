@@ -2,63 +2,63 @@
   {
     "_id": "1",
     "matterTitle": "Clouds our thinking, lowers productivity & affects our sleep.",
-    "matterDescription": "",
+    "matterDescription": "Exhaled breath from people & pets and open flames are the most common sources.",
     "button": "Carbon Dioxide",
     "imgUrl": "/images/matters1.png"
   },
   {
     "_id": "2",
     "matterTitle": "Irritates our noses and throats, amplifies allergies & triggers asthma.",
-    "matterDescription": "",
+    "matterDescription": "Cleaning products are the most common sources.",
     "button": "Ammonia",
     "imgUrl": "/images/matters2.png"
   },
   {
     "_id": "3",
     "matterTitle": "Irritates the eyes, nose, throat & skin - and is often linked to cancer.",
-    "matterDescription": "",
+    "matterDescription": "Pressed wood products like easy-to-assemble furniture are the most common sources.",
     "button": "Formaldehyde",
     "imgUrl": "/images/matters3.png"
   },
   {
     "_id": "4",
     "matterTitle": "Causes permanent damage to our respiratory system.",
-    "matterDescription": "",
+    "matterDescription": "Wood fireplaces & fuel powered appliances are the most common sources.",
     "button": "Nitrogen Dioxide",
     "imgUrl": "/images/matters4.png"
   },
   {
     "_id": "5",
     "matterTitle": "Irritates our lungs causing coughing and shortness of breath.",
-    "matterDescription": "",
+    "matterDescription": "Garbage, scented candles & cigarette smoke are the most common sources.",
     "button": "Butanal",
     "imgUrl": "/images/matters5.png"
   },
   {
     "_id": "6",
     "matterTitle": "Irritates our lungs, aggravates allergies & can increase virus spread.",
-    "matterDescription": "",
+    "matterDescription": "Cooking, cleaning & particles coming from the outdoors are the most common sources.",
     "button": "Particulate Matter",
     "imgUrl": "/images/matters6.png"
   },
   {
     "_id": "7",
     "matterTitle": "Causes headaches, nausea & irritates our lungs.",
-    "matterDescription": "",
+    "matterDescription": "Cleaning detergents & hand sanitizers are the most common sources.",
     "button": "Ethanol",
     "imgUrl": "/images/matters7.png"
   },
   {
     "_id": "8",
     "matterTitle": "Seeps into furniture and can linger in a space for a long time.",
-    "matterDescription": "",
+    "matterDescription": "If smoking is not allowed in your space, keep an eye behind closed doors.",
     "button": "Tobacco Odour",
     "imgUrl": "/images/matters8.png"
   },
   {
     "_id": "9",
     "matterTitle": "Causes mold growth that triggers asthma & irritates our ears, nose and throat.",
-    "matterDescription": "",
+    "matterDescription": "If humidity is too low, viruses can more easily survive and be transmitted.",
     "button": "Humidity",
     "imgUrl": "/images/matters9.png"
   }
