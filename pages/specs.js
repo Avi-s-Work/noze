@@ -41,25 +41,18 @@ export default function Specs() {
                 />
               </div>
               <div className="collapse-content px-8">
-                <p className="pt-4 pb-2 text-lg text-gray-500">
-                  {spec.specOne} <br />
-                  {spec.specTwo} <br />
-                  {spec.specThree} <br />
-                  {spec.specFour} <br />
-                  {spec.specFive} <br />
-                  {spec.specSix} <br />
-                  {spec.specSeven} <br />
-                  {spec.specEight} <br />
-                  {spec.specNine} <br />
-                  {spec.specTen} <br />
-                  {spec.specEleven} <br />
-                  {spec.specTwelve}
-                </p>
-                {spec.note ? (
-                  <p className="pt-6 pb-2 text-lg text-gray-500">{spec.note}</p>
-                ) : (
-                  <div></div>
-                )}
+                <p className="text-lg text-gray-500">{spec.specOne}</p>
+                <p className="text-lg text-gray-500">{spec.specTwo}</p>
+                <p className="text-lg text-gray-500">{spec.specThree}</p>
+                <p className="text-lg text-gray-500">{spec.specFour}</p>
+                <p className="text-lg text-gray-500">{spec.specFive}</p>
+                <p className="text-lg text-gray-500">{spec.specSix}</p>
+                <p className="text-lg text-gray-500">{spec.specSeven}</p>
+                <p className="text-lg text-gray-500">{spec.specEight}</p>
+                <p className="text-lg text-gray-500">{spec.specNine}</p>
+                <p className="text-lg text-gray-500">{spec.specTen}</p>
+                <p className="text-lg text-gray-500">{spec.specEleven}</p>
+                <p className="text-lg text-gray-500">{spec.specTwelve}</p>
               </div>
             </div>
           ))}
