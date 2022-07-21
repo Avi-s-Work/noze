@@ -31,10 +31,7 @@ export default function Wondering() {
       <div
         ref={ref}
         className="max-w-screen-xl py-24 px-36 grid 
-    grid-cols-1 
-    md:grid-cols-1 
-    xl:grid-cols-2 
-    lg:grid-cols-2
+    grid-cols-2
     items-center 
     mx-auto"
       >
@@ -51,7 +48,7 @@ export default function Wondering() {
           </div>
         </div>
         {/* Text Detail  */}
-        <div className=" flex justify-end">
+        <div className="flex justify-end">
           <motion.div animate={animation}>
             <h1 className="pb-6 text-5xl text-slate-900 font-bold text-center sm:text-left">
               Wondering if <br /> you should get <br /> a NOZE?
