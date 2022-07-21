@@ -5,7 +5,7 @@ export default function Matters() {
   const [selectedMatter, SetSelectedMatter] = useState([]);
 
   useEffect(() => {
-    fetch("https://mysterious-earth-60925.herokuapp.com/stations")
+    fetch("/matters.json")
       .then((res) => res.json())
       .then((data) => setMatters(data));
   }, []);
@@ -26,8 +26,8 @@ export default function Matters() {
           <div className="w-3/5">
             {matters.map((matter) => (
               <div key={matter._id} matter={matter}>
-                <button onClick={() => clickSingleMatter(matter)}>
-                  {matter.stationName}
+                <button className="text-purple-300 text-xl font-bold hover:font-light focus:text-purple-900 hover:text-purple-500 mb-4" onClick={() => clickSingleMatter(matter)}>
+                  {matter.button}
                 </button>
               </div>
             ))}
@@ -36,7 +36,7 @@ export default function Matters() {
           <div className="w-full h-screen border border-red-700">
             {selectedMatter.map((singleMatters) => (
               <div key={singleMatters._id}>
-                <h1>{singleMatters.frequency}</h1>
+                <h1>{singleMatters.matterTitle}</h1>
               </div>
             ))}
           </div>
