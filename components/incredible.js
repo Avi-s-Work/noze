@@ -1,17 +1,53 @@
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 export default function Incredible() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("scroll_inView", inView);
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: { type: "spring", bounce: 0.4, duration: 2 },
+      });
+    }
+
+    if (!inView) {
+      animation.start({
+        y: 300,
+        opacity: 0,
+      });
+    }
+  }, [inView, animation]);
   return (
     <>
-      <div className="max-w-screen-xl py-24 px-16 flex items-center justify-between mx-auto ">
-        {/* Text Detail  */}
+      <div
+        ref={ref}
+        className="max-w-screen-xl py-24 px-16 flex items-center justify-between mx-auto "
+      >
+        {/* Heading  */}
         <div className="w-3/5">
-          <h1 className="text-5xl text-indigo-900 font-bold text-left">
+          <motion.h1
+            animate={animation}
+            className="text-5xl text-slate-900 font-bold text-left"
+          >
             Incredible <br /> power, right <br /> under your <br /> NOZE
-          </h1>
+          </motion.h1>
         </div>
-        {/* Video  */}
+        {/* Check In Details  */}
         <div className="w-full h-screen overflow-y-scroll incredible grid grid-cols-2">
-          <div className="w-full flex flex-col items-center">
+          {/* Check In  */}
+          <motion.div
+            animate={animation}
+            className="w-full flex flex-col items-center"
+          >
             <div className="bg-purple-200 h-96 w-80 rounded-full relative overflow-hidden flex items-center justify-center">
               <Image
                 src="/images/check_in.png"
@@ -29,10 +65,15 @@ export default function Incredible() {
                 of <br /> mind all the time.
               </span>
             </div>
-          </div>
+          </motion.div>
+          {/* Check In  */}
           <div className="w-full"></div>
           <div className="w-full"></div>
-          <div className="w-full flex flex-col items-center">
+          {/* Track In  */}
+          <motion.div
+            animate={animation}
+            className="w-full flex flex-col items-center"
+          >
             <div className="bg-purple-200 h-96 w-80 rounded-full relative overflow-hidden flex items-center justify-center">
               <Image
                 src="/images/track_in.png"
@@ -50,8 +91,12 @@ export default function Incredible() {
                 going on so you can take <br /> action in the moment.
               </span>
             </div>
-          </div>
-          <div className="w-full flex flex-col items-center">
+          </motion.div>
+          {/* Share It  */}
+          <motion.div
+            animate={animation}
+            className="w-full flex flex-col items-center"
+          >
             <div className="bg-purple-200 h-96 w-80 rounded-full relative overflow-hidden flex items-center justify-center">
               <Image
                 src="/images/share_it.png"
@@ -87,7 +132,8 @@ export default function Incredible() {
                 </div>
               </i>
             </div>
-          </div>
+          </motion.div>
+          {/* Share It  */}
           <div className="w-full"></div>
         </div>
       </div>

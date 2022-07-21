@@ -21,7 +21,7 @@ export default function Wondering() {
 
     if (!inView) {
       animation.start({
-        y: 200,
+        y: 100,
         opacity: 0,
       });
     }
