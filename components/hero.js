@@ -32,7 +32,7 @@ export default function Hero() {
   return (
     <>
       <div
-        className="max-w-screen-xl px-6 grid 
+        className="max-w-screen-xl mt-16 pt-2 px-6 grid 
     grid-cols-1 
     md:grid-cols-1 
     xl:grid-cols-2 
