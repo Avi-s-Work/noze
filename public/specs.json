@@ -1,0 +1,59 @@
+[
+  {
+    "id": "0",
+    "title": "What's in the box?",
+    "specOne": "Quick Start Guide",
+    "specTwo": "Quick Start Guide",
+    "specThree": "Quick Start Guide",
+    "specFour": "Quick Start Guide"
+  },
+  {
+    "id": "1",
+    "title": "Dimensions & Weight",
+    "specOne": "Quick Start Guide",
+    "specTwo": "Quick Start Guide",
+    "specThree": "Quick Start Guide",
+    "specFour": "Quick Start Guide"
+  },
+  {
+    "id": "2",
+    "title": "Power",
+    "specOne": "Quick Start Guide",
+    "specTwo": "Quick Start Guide"
+  },
+  {
+    "id": "3",
+    "title": "Connectivity",
+    "specOne": "Quick Start Guide",
+    "specTwo": "Quick Start Guide"
+  },
+  {
+    "id": "4",
+    "title": "Requirements",
+    "specOne": "Quick Start Guide",
+    "specTwo": "Quick Start Guide",
+    "specThree": "Quick Start Guide",
+    "specFour": "Quick Start Guide"
+  },
+  {
+    "id": "5",
+    "title": "Detection Ranges",
+    "specOne": "Quick Start Guide",
+    "specTwo": "Quick Start Guide",
+    "specThree": "Quick Start Guide",
+    "specFour": "Quick Start Guide",
+    "specFive": "Quick Start Guide",
+    "specSix": "Quick Start Guide",
+    "specSeven": "Quick Start Guide",
+    "specEight": "Quick Start Guide",
+    "specNine": "Quick Start Guide",
+    "specTen": "Quick Start Guide",
+    "specEleven": "Quick Start Guide",
+    "specTwelve": "Quick Start Guide"
+  },
+  {
+    "id": "6",
+    "title": "Warranty",
+    "specOne": "Quick Start Guide"
+  }
+]

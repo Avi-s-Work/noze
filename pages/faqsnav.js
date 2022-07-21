@@ -20,10 +20,10 @@ export default function Faqsnav({ faqs }) {
         {data.map((faq, key) => (
           <div
             key={faq.id}
-            className="collapse border border-purple-400 bg-base-100 rounded-3xl hover:shadow-xl hover:border-purple-900 mb-6"
+            className="collapse border border-purple-400 bg-base-100 rounded-3xl hover:shadow-xl hover:border-purple-900 mb-5"
           >
             <input type="checkbox" />
-            <div className="collapse-title flex justify-between items-center text-xl px-8 py-6">
+            <div className="collapse-title flex justify-between items-center text-xl px-8 py-5">
               <span className="font-bold text-purple-900">{faq.question}</span>
               <FontAwesomeIcon
                 className="text-purple-200 text-4xl"
