@@ -55,7 +55,7 @@ export default function Navbar() {
                     <span style={{ fontSize: "14.5px" }}>Pre Order</span>
                   </button>
                   <button
-                    className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50"
+                    className="flex border-2 border-slate-900 px-2 text-2xl text-slate-900 items-center cursor-pointer fixed right-3 top-3 z-50"
                     onClick={() => setShowSidebar(!showSidebar)}
                   >
                     x
@@ -71,13 +71,38 @@ export default function Navbar() {
               )}
 
               <div
-                className={`top-0 right-0 w-[30vw] bg-blue-600  p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
+                className={`top-0 right-0 w-[27vw] bg-white shadow-2xl text-white fixed h-full z-40  ease-in-out duration-300 ${
                   showSidebar ? "translate-x-0 " : "translate-x-full"
                 }`}
               >
-                <h3 className="mt-20 text-4xl font-semibold text-white">
-                  I am a sidebar
-                </h3>
+                <h3 className="ml-4 mt-4 text-xl text-slate-900">Cart</h3>
+                <div className="flex mt-10 px-10">
+                  {/* Noze Device   */}
+                  <div>
+                    <Image
+                      src="/images/Noze_Cart.png"
+                      alt="Noze"
+                      width="28"
+                      height="48"
+                    />
+                  </div>
+                  {/* Counter  */}
+                  <div>
+                    <p className="text-xs text-slate-900">
+                      Lorem ipsum dolor sit amet
+                    </p>
+                    <div className="flex">
+                      <div className="flex">
+                        <div className="decrease text-slate-900">+</div>
+                        <div className="quantity text-slate-900">0</div>
+                        <div className="increase text-slate-900">_</div>
+                      </div>
+                      <div className="price">
+                        <span className="text-slate-900">$999.9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             {/* Cart Drawer */}
