@@ -10,7 +10,7 @@ export default function Incredible() {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("scroll_inView", inView);
+    // console.log("scroll_inView", inView);
     if (inView) {
       animation.start({
         y: 0,

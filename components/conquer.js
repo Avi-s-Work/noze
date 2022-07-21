@@ -9,7 +9,7 @@ export default function Conquer() {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("scroll_inView", inView);
+    // console.log("scroll_inView", inView);
     if (inView) {
       animation.start({
         y: 0,
@@ -30,7 +30,7 @@ export default function Conquer() {
     <>
       <div
         ref={ref}
-        className="max-w-screen-xl py-24 grid 
+        className="max-w-screen-xl pb-24 grid 
     grid-cols-1 
     md:grid-cols-1 
     xl:grid-cols-2 

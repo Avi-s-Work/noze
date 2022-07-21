@@ -14,7 +14,7 @@ export default function Matters() {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("scroll_inView", inView);
+    // console.log("scroll_inView", inView);
     if (inView) {
       animation.start({
         y: 0,
@@ -40,7 +40,7 @@ export default function Matters() {
   //Select Matter Click Handler
   const clickSingleMatter = (matter) => {
     setClick(click + 1);
-    console.log(click);
+    // console.log(click);
     const singleMatter = [matter];
     SetSelectedMatter(singleMatter);
   };
@@ -84,6 +84,7 @@ export default function Matters() {
                   alt=""
                   layout="fill"
                   priority
+                  as
                   className="absolute"
                 ></Image>
                 <h1 className="absolute text-center text-white text-4xl top-36 left-28 right-28">

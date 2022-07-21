@@ -1,5 +1,6 @@
 import Hero from "../components/hero";
 import Making from "../components/making";
+import Anything from "../components/anything";
 import Conquer from "../components/conquer";
 import Break from "../components/break";
 import Matters from "../components/matters";
@@ -13,6 +14,7 @@ export default function Homepage() {
     <>
       <Hero />
       <Making />
+      <Anything />
       <Conquer />
       <Break />
       <Matters />
