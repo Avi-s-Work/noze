@@ -11,22 +11,22 @@ export default function Incredible() {
         </div>
         {/* Video  */}
         <div className="w-full h-screen overflow-y-scroll incredible border border-red-500 grid grid-cols-2">
-          <div className="w-full border border-purple-800 flex flex-col items-center">
-            <div className="h-96 border-4 border-red-700 w-80 rounded-full relative overflow-hidden">
+          <div className="w-full flex flex-col items-center">
+            <div className="bg-purple-200 h-96 w-80 rounded-full relative overflow-hidden flex items-center justify-center">
               <Image
-                src="/images/wondering.png"
+                src="/images/check_in.png"
                 alt="Noze"
-                layout="fill"
+                width="300"
+                height="344"
                 className="absolute"
-                priority
               />
             </div>
-            <div>
-              <span>Check in.</span>
+            <div className="text-center pt-6">
+              <strong className="font-bold">Check in.</strong>
               <br />
-              <span>
-                Keep an eye on things in real-time so you can have peace of mind
-                all the time.
+              <span className="">
+                Keep an eye on things in real- <br /> time so you can have peace
+                of <br /> mind all the time.
               </span>
             </div>
           </div>
