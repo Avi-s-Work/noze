@@ -28,7 +28,7 @@ export default function Anything() {
   }, [inView, animation]);
   return (
     <>
-      <main
+      <div
         ref={ref}
         className="relative max-w-screen-xl mt-48 mb-6 flex
     items-center 
@@ -83,7 +83,7 @@ export default function Anything() {
                   NOZE is powered by a single sensor built on years of NASA{" "}
                   <br />
                   innovation. Our technology raises the bar to new heights{" "}
-                  <div className="tooltip ml-2" data-tip="For more click here.">
+                  <div className="tooltip" data-tip="For more click here.">
                     <div>
                       <Image
                         src="/images/info.svg"
@@ -118,7 +118,7 @@ export default function Anything() {
             {/* Accordion  */}
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

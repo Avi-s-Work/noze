@@ -16,6 +16,3 @@ question.forEach((question) => {
     }
   });
 });
-
-
-

@@ -2,8 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useState } from "react";
 export default function Navbar() {
+  const [showSidebar, setShowSidebar] = useState(false);
   return (
     <>
       <header className="fixed top-0 z-30 w-full px-4 py-4 lg:px-2 lg:py-2 bg-white border-b shadow-sm">
@@ -43,9 +44,44 @@ export default function Navbar() {
           {/* Pre Order  */}
           <div className="mr-10 hidden lg:flex items-center">
             <span className="text-gray-600 text-md mr-9">Order for $249</span>
-            <button className="bg-purple-800 hover:bg-purple-900 duration-300 text-white py-3 px-8 rounded-md font-semibold">
+            {/* <button className="bg-purple-800 hover:bg-purple-900 duration-300 text-white py-3 px-8 rounded-md font-semibold">
               <span style={{ fontSize: "14.5px" }}>Pre Order</span>
-            </button>
+            </button> */}
+            {/* Cart Drawer */}
+            <div>
+              {showSidebar ? (
+                <button
+                  className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50"
+                  onClick={() => setShowSidebar(!showSidebar)}
+                >
+                  x
+                </button>
+              ) : (
+                <svg
+                  onClick={() => setShowSidebar(!showSidebar)}
+                  className="fixed  z-30 flex items-center cursor-pointer right-10 top-6"
+                  fill="#2563EB"
+                  viewBox="0 0 100 80"
+                  width="40"
+                  height="40"
+                >
+                  <rect width="100" height="10"></rect>
+                  <rect y="30" width="100" height="10"></rect>
+                  <rect y="60" width="100" height="10"></rect>
+                </svg>
+              )}
+
+              <div
+                className={`top-0 right-0 w-[35vw] bg-blue-600  p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
+                  showSidebar ? "translate-x-0 " : "translate-x-full"
+                }`}
+              >
+                <h3 className="mt-20 text-4xl font-semibold text-white">
+                  I am a sidebar
+                </h3>
+              </div>
+            </div>
+            {/* Cart Drawer */}
           </div>
           {/* Little Accordion */}
           <div className="sm:hidden flex flex-col items-start w-32 mr-2 sec-container px-3">
