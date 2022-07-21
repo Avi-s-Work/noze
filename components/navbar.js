@@ -7,7 +7,7 @@ export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <>
-      <header className="fixed top-0 z-30 w-full px-4 py-4 lg:px-2 lg:py-2 bg-white border-b shadow-sm">
+      <div className="fixed top-0 z-30 w-full px-4 py-4 lg:px-2 lg:py-2 bg-white border-b shadow-sm">
         <div className="flex items-center justify-between mx-auto max-w-7xl">
           {/* Logo & Navs  */}
           <div className="flex items-center">
@@ -50,29 +50,28 @@ export default function Navbar() {
             {/* Cart Drawer */}
             <div>
               {showSidebar ? (
-                <button
-                  className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50"
-                  onClick={() => setShowSidebar(!showSidebar)}
-                >
-                  x
-                </button>
+                <div>
+                  <button className="bg-purple-800 hover:bg-purple-900 duration-300 text-white py-3 px-8 rounded-md font-semibold">
+                    <span style={{ fontSize: "14.5px" }}>Pre Order</span>
+                  </button>
+                  <button
+                    className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50"
+                    onClick={() => setShowSidebar(!showSidebar)}
+                  >
+                    x
+                  </button>
+                </div>
               ) : (
-                <svg
+                <button
                   onClick={() => setShowSidebar(!showSidebar)}
-                  className="fixed  z-30 flex items-center cursor-pointer right-10 top-6"
-                  fill="#2563EB"
-                  viewBox="0 0 100 80"
-                  width="40"
-                  height="40"
+                  className="bg-purple-800 hover:bg-purple-900 duration-300 text-white py-3 px-8 rounded-md font-semibold"
                 >
-                  <rect width="100" height="10"></rect>
-                  <rect y="30" width="100" height="10"></rect>
-                  <rect y="60" width="100" height="10"></rect>
-                </svg>
+                  <span style={{ fontSize: "14.5px" }}>Pre Order</span>
+                </button>
               )}
 
               <div
-                className={`top-0 right-0 w-[35vw] bg-blue-600  p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
+                className={`top-0 right-0 w-[30vw] bg-blue-600  p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
                   showSidebar ? "translate-x-0 " : "translate-x-full"
                 }`}
               >
@@ -103,7 +102,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </>
   );
 }
