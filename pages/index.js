@@ -12,7 +12,7 @@ export default function Home() {
           type="image/svg"
           href="https://getnoze.com/wp-content/themes/noze/noze/assets/img/favicon.svg"
         />
-      </Head>
+      </Head>      
       <Homepage />
       <Script src="/accordion.js"></Script>
     </div>

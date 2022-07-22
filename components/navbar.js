@@ -1,10 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const increaser = () => setCount(count + 1);
+  const decreaser = () => setCount(count - 1);
+  // const resetCounter = () => setCount(count * 0);
+
   return (
     <>
       <div className="fixed top-0 z-30 w-full px-4 py-4 lg:px-2 lg:py-2 bg-white border-b shadow-sm">
@@ -44,9 +50,7 @@ export default function Navbar() {
           {/* Pre Order  */}
           <div className="mr-10 hidden lg:flex items-center">
             <span className="text-gray-600 text-md mr-9">Order for $249</span>
-            {/* <button className="bg-purple-800 hover:bg-purple-900 duration-300 text-white py-3 px-8 rounded-md font-semibold">
-              <span style={{ fontSize: "14.5px" }}>Pre Order</span>
-            </button> */}
+
             {/* Cart Drawer */}
             <div>
               {showSidebar ? (
@@ -94,13 +98,19 @@ export default function Navbar() {
                     </p>
                     <div className="flex items-center justify-between">
                       <div className="flex">
-                        <div className="decrease text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white ">
+                        <div
+                          onClick={decreaser}
+                          className="decrease text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white "
+                        >
                           -
                         </div>
                         <div className="quantity text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white px-5">
-                          0
+                          {count}
                         </div>
-                        <div className="increase text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white ">
+                        <div
+                          onClick={increaser}
+                          className="increase text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white "
+                        >
                           +
                         </div>
                       </div>
@@ -116,7 +126,7 @@ export default function Navbar() {
                 <div className="w-full flex flex-col px-4 absolute bottom-4">
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-xs text-slate-900">SUBTOTAL</span>
-                    <span className="text-xs text-slate-900">$1,245.00</span>
+                    <span className="text-sm text-slate-900">$1,245.00</span>
                   </div>
                   <p
                     style={{ fontSize: "10px" }}
@@ -153,6 +163,14 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      {/* Cart Scroll Button */}
+      <button
+        onClick={() => setShowSidebar(!showSidebar)}
+        className="stickyCart bg-purple-800 hover:bg-purple-900 duration-300 text-white py-3 px-8 rounded-md font-semibold flex flex-col items-center"
+      >
+        <span className="text-md font-semibold text-white mb-1">{count}</span>
+        <FontAwesomeIcon className="text-white text-xl" icon={faShoppingCart} />
+      </button>
     </>
   );
 }
