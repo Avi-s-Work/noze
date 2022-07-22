@@ -3,7 +3,7 @@ import { faAngleDown, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-export default function Navbar() {
+export default function Navbar() { 
   const [showSidebar, setShowSidebar] = useState(false);
   const [count, setCount] = useState(0);
 
