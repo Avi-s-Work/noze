@@ -55,7 +55,7 @@ export default function Navbar() {
                     <span style={{ fontSize: "14.5px" }}>Pre Order</span>
                   </button>
                   <button
-                    className="flex border-2 border-slate-900 px-2 text-2xl text-slate-900 items-center cursor-pointer fixed right-3 top-3 z-50"
+                    className="flex font-bold px-2 text-2xl text-slate-400 items-center cursor-pointer fixed right-3 top-3 z-50"
                     onClick={() => setShowSidebar(!showSidebar)}
                   >
                     x
@@ -75,33 +75,58 @@ export default function Navbar() {
                   showSidebar ? "translate-x-0 " : "translate-x-full"
                 }`}
               >
+                {/* Cart Bar  */}
                 <h3 className="ml-4 mt-4 text-xl text-slate-900">Cart</h3>
-                <div className="flex mt-10 px-10">
+                <div className="flex items-center mt-4 pl-10 h-32">
                   {/* Noze Device   */}
                   <div>
                     <Image
                       src="/images/Noze_Cart.png"
                       alt="Noze"
-                      width="28"
-                      height="48"
+                      width="36"
+                      height="66"
                     />
                   </div>
                   {/* Counter  */}
-                  <div>
-                    <p className="text-xs text-slate-900">
-                      Lorem ipsum dolor sit amet
+                  <div className="pl-10">
+                    <p className="text-sm mb-6 text-slate-900">
+                      Noze | Smart Air Quality Monitor
                     </p>
-                    <div className="flex">
+                    <div className="flex items-center justify-between">
                       <div className="flex">
-                        <div className="decrease text-slate-900">+</div>
-                        <div className="quantity text-slate-900">0</div>
-                        <div className="increase text-slate-900">_</div>
+                        <div className="decrease text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white ">
+                          -
+                        </div>
+                        <div className="quantity text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white px-5">
+                          0
+                        </div>
+                        <div className="increase text-slate-900 flex items-center justify-between border rounded-none btn btn-sm bg-white hover:bg-white ">
+                          +
+                        </div>
                       </div>
                       <div className="price">
-                        <span className="text-slate-900">$999.9</span>
+                        <span className="text-slate-900 text-xs font-semibold">
+                          $249.00
+                        </span>
                       </div>
                     </div>
                   </div>
+                </div>
+                {/* Check Out Bar  */}
+                <div className="w-full flex flex-col px-4 absolute bottom-4">
+                  <div className="flex justify-between items-center mb-4">
+                    <span className="text-xs text-slate-900">SUBTOTAL</span>
+                    <span className="text-xs text-slate-900">$1,245.00</span>
+                  </div>
+                  <p
+                    style={{ fontSize: "10px" }}
+                    className="text-slate-900 text-center mb-4"
+                  >
+                    Shipping and discount codes are added at checkout.
+                  </p>
+                  <button className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-4 rounded-md text-md font-semibold text-center border-0 cursor-pointer">
+                    <span>Checkout</span>
+                  </button>
                 </div>
               </div>
             </div>
