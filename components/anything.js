@@ -80,9 +80,9 @@ export default function Anything() {
                   animate={animation}
                   className="text-md text-gray-600 text-left"
                 >
-                  NOZE is powered by a single sensor built on years of NASA{" "}
+                  NOZE is powered by a single sensor built on years of NASA
                   <br />
-                  innovation. Our technology raises the bar to new heights{" "}
+                  innovation. Our technology raises the bar to new heights
                   <div className="tooltip" data-tip="For more click here.">
                     <div>
                       <Image
@@ -92,7 +92,7 @@ export default function Anything() {
                         height="15"
                       />
                     </div>
-                  </div>{" "}
+                  </div>
                   by <br /> using the digital sense of smell to keep track of
                   the air you’re breathing.
                 </p>

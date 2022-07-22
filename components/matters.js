@@ -84,7 +84,6 @@ export default function Matters() {
                   alt=""
                   layout="fill"
                   priority
-                  as
                   className="absolute"
                 ></Image>
                 <h1 className="absolute text-center text-white text-4xl top-36 left-28 right-28">
