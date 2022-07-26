@@ -6,6 +6,7 @@ import Image from "next/image";
 export default function Matters() {
   const [matters, setMatters] = useState([]);
   const [selectedMatter, SetSelectedMatter] = useState([]);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const [click, setClick] = useState(0);
 
