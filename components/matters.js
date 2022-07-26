@@ -2,6 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+
 export default function Matters() {
   const [matters, setMatters] = useState([]);
   const [selectedMatter, SetSelectedMatter] = useState([]);
@@ -14,7 +15,12 @@ export default function Matters() {
   const animation = useAnimation();
 
   useEffect(() => {
+    fetch("/matters.json")
+      .then((res) => res.json())
+      .then((data) => setMatters(data));
+
     // console.log("scroll_inView", inView);
+
     if (inView) {
       animation.start({
         y: 0,
@@ -30,12 +36,6 @@ export default function Matters() {
       });
     }
   }, [inView, animation]);
-
-  useEffect(() => {
-    fetch("/matters.json")
-      .then((res) => res.json())
-      .then((data) => setMatters(data));
-  }, []);
 
   //Select Matter Click Handler
   const clickSingleMatter = (matter) => {
